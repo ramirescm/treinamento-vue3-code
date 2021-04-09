@@ -41,7 +41,7 @@ type State = {
 
 interface SetupReturn {
   state: State
-  // submitAFeedback: Promise<void>
+  submitAFeedback(): Promise<void>
   submitButtonIsDisabled: ComputedRef<boolean>
 }
 
@@ -94,11 +94,9 @@ export default defineComponent({
 
     return {
       state,
+      submitAFeedback,
       submitButtonIsDisabled
     }
   }
 })
 </script>
-
-<style>
-</style>
