@@ -6,7 +6,7 @@
     ></textarea>
     <button
       :disabled="submitButtonIsDisabled"
-      :clas="{
+      :class="{
         'opacity-50': state.isLoading,
         'opacity-50 bg-gray-100 text-gray-100': submitButtonIsDisabled,
         'bg-brand-main text-white': !submitButtonIsDisabled
