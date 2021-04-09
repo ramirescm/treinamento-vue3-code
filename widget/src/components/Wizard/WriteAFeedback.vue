@@ -8,7 +8,7 @@
       :disabled="submitButtonIsDisabled"
       :class="{
         'opacity-50': state.isLoading,
-        'opacity-50 bg-gray-100 text-gray-100': submitButtonIsDisabled,
+        'opacity-50 bg-gray-100 text-gray-500': submitButtonIsDisabled,
         'bg-brand-main text-white': !submitButtonIsDisabled
       }"
       @click="submitAFeedback"
